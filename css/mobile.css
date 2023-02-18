@@ -7,7 +7,9 @@
     /* max-width: 428px; */
   }
 
-
+  .subscribe-item {
+    width: 396px;
+  }
 
   /* .customers-icon-list {
     display: flex;
@@ -26,6 +28,12 @@
 }
 
 @media screen and (max-width: 767px) {
+
+    .team-container {
+        max-width: 264px;
+
+    }
+    
   .header-list {
     display: none;
   }
@@ -143,4 +151,10 @@
     display: flex;
     flex-wrap: wrap;
   } */
+
+
+
+  /* footer */
+
+  
 }

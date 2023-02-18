@@ -205,6 +205,8 @@ button {
 /* -------------------------- MAIN -------------------- section */
 
 .main {
+  margin: 0 auto;
+  max-width: 428px;
   position: relative;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -214,17 +216,12 @@ button {
   background-repeat: no-repeat;
   background-position: center center;
 
-  /* background-size: 428px, 428px, cover; */
   display: block;
   background-size: cover;
   align-items: center;
-
+  text-align: center;
   padding-top: 112px;
   padding-bottom: 112px;
-  /* margin: 0 auto;
-  max-width: 100%; */
-  /* display: flex; */
-
 }
 
 .main-header {
@@ -502,19 +499,29 @@ button {
   padding: 96px 0;
 }
 
+.attitudes-container {
+}
 .attitudes-list {
-  display: flex;
-  /* flex-wrap: wrap; */
+  /* display: flex;
+  flex-wrap: wrap; */
+   display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
 }
 
 .attitudes-item {
   max-width: 396px;
+  margin-bottom: 72px;
   /* margin-right: 24px; */
   /* width: calc(100% / 2); */
 }
 
+.attitudes-item:last-child {
+  margin-bottom: 0;
+}
+
 .attitudes-caption {
-  margin-bottom: 72px;
 }
 
 /* .attitudes-caption:last-child {
@@ -541,6 +548,7 @@ button {
   line-height: var(--main-line-height);
   letter-spacing: 0.02em;
   color: #434455;
+
   /* justify-content: center; */
 }
 
@@ -591,11 +599,12 @@ button {
 }
 
 .team-container {
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
+  /* box-sizing: border-box;
+  align-items: center; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
 .team-header {
@@ -765,20 +774,25 @@ button {
   /* justify-content: center; */
 }
 
-/* .footer-container {
-  box-sizing: border-box;
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* box-sizing: border-box;
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
-} */
+  flex-wrap: wrap; */
+}
 
 .footer-block-one {
+  text-align: center;
   /* box-sizing: border-box; */
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
+  /* align-items: center;
+  justify-content: center; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
 }
 
 .footer-logo {
@@ -789,7 +803,8 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--light-color);
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .footer-logo-web-text {
@@ -803,6 +818,7 @@ button {
 }
 
 .footer-title {
+  text-align: start;
   font-size: 16px;
   line-height: var(--main-line-height);
   letter-spacing: 0.02em;
@@ -813,23 +829,35 @@ button {
   top: 2418px;
   margin-top: 16px;
   margin-bottom: 72px;
+
+  /* box-sizing: border-box;
+  display: block;
+  justify-content: center; */
 }
 
 .footer-container {
   /* display: flex; */
   /* flex-wrap: wrap; */
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 /* ------------------- */
 
 .social-media {
+  text-align: center;
   /* margin-left: 120px; */
   /* justify-content: center; */
+
+  /* box-sizing: border-box;
   align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
+  justify-content: center; */
+
+  /* box-sizing: border-box;
+  align-items: center;
+  justify-content: center; */
+
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
 .social-media-header {
@@ -839,10 +867,12 @@ button {
   letter-spacing: 0.02em;
   color: var(--main-white-color);
   margin-bottom: 16px;
+  justify-content: center;
 }
 
 .social-media-list {
   display: flex;
+  justify-content: center;
 }
 
 .social-media-item {
@@ -877,14 +907,18 @@ button {
 
 .subscribe {
   /* margin-left: 80px; */
-  align-items: center;
+  /* align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
+  box-sizing: border-box; */
+}
+
+.subscribe-caption {
 }
 
 .subscribe-title {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -908,9 +942,9 @@ button {
   border-radius: 4px;
   padding: 8px 0 8px 16px;
   height: 40px;
-  width: 264px;
+  width: 300px;
   color: #ffffff;
-  margin-right: 24px;
+  /* margin-right: 24px; */
   position: relative;
   display: block;
 }
@@ -923,6 +957,7 @@ button {
 }
 
 .subscribe-btn {
+  margin: 0 auto;
   background: #4d5ae5;
   border-color: #4d5ae5;
   border-radius: 4px;
