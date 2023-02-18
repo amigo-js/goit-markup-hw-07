@@ -4,8 +4,10 @@
   }
 
   .main {
-    max-width: 428px;
+    /* max-width: 428px; */
   }
+
+
 
   /* .customers-icon-list {
     display: flex;
@@ -32,11 +34,17 @@
     display: none;
   }
 
+  .header {
+      display: flex;
+  }
+
   .header-burger-btn {
     border: none;
     background-color: transparent;
     height: 32px;
     padding: 0;
+    /* justify-content: end; */
+    margin-right: 16px;
   }
 
   .header-burger-btn-svg {
@@ -127,4 +135,12 @@
   .mobile-active-pages {
     color: #404bbf;
   }
+
+  /* .team-container {
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  } */
 }

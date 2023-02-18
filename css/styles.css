@@ -212,12 +212,19 @@ button {
     ),
     url(../images/mobile/mobile-people-office.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+
+  /* background-size: 428px, 428px, cover; */
+  display: block;
   background-size: cover;
+  align-items: center;
+
   padding-top: 112px;
   padding-bottom: 112px;
-  margin: 0 auto;
-  max-width: 100%;
+  /* margin: 0 auto;
+  max-width: 100%; */
+  /* display: flex; */
+
 }
 
 .main-header {
@@ -230,6 +237,12 @@ button {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+  /*  */
+  /* display: block;
+  box-sizing: border-box; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-btn {
@@ -899,7 +912,7 @@ button {
   color: #ffffff;
   margin-right: 24px;
   position: relative;
-    display: block;
+  display: block;
 }
 
 .subscribe-item::placeholder {
