@@ -1,6 +1,115 @@
 @media screen and (min-width: 1200px) {
-  
-    .container {
+  .container {
     max-width: 1158px;
+  }
+  .contact-item {
+    margin-right: 40px;
+  }
+
+  .contact-item:last-child {
+    margin-right: 0;
+  }
+  .main {
+    position: relative;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1440px, 1440px, cover;
+  }
+
+  .attitudes {
+    padding: 120px 0;
+  }
+
+  .attitudes-item {
+    max-width: 264px;
+    width: calc(100% / 4);
+  }
+
+  .attitudes-item:last-child {
+    margin-right: 0;
+  }
+
+  .attitudes-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .attitudes-item-text {
+    font-weight: 400;
+  }
+
+  .team {
+    padding: 120px 0;
+  }
+
+  .team-list {
+    max-width: 100%;
+    row-gap: 64px;
+    column-gap: 24px;
+
+    margin: 0 auto;
+  }
+
+  .customers {
+    padding: 120px 0;
+  }
+
+  .customers-icon-item {
+    width: 168px;
+    height: 88px;
+  }
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+  }
+
+  .footer-block-one {
+    text-align: start;
+    margin-right: 120px;
+  }
+
+  .social-media {
+    text-align: start;
+    margin-right: 80px;
+  }
+
+  .subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe-caption {
+  }
+
+  .subscribe-title {
+    text-align: start;
+    margin-right: 24px;
+  }
+
+  .subscribe-item {
+    width: 264px;
+    margin-right: 24px;
+  }
+
+  .subscribe-form {
+    display: flex;
+  }
+
+  .subscribe-btn {
+    margin-top: auto;
   }
 }
