@@ -28,6 +28,11 @@ body {
   overflow: hidden;
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container {
   /* max-width: 1158px; */
   width: 100%;
@@ -35,8 +40,14 @@ body {
   padding: 0 15px;
 }
 
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
 .list {
   list-style: none;
+  /* display: flex; */
 }
 
 .link {
@@ -63,6 +74,10 @@ img {
   max-width: 100%;
   height: auto;
   width: 100%;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* --------------------- index.html file ------------- */
@@ -187,9 +202,6 @@ img {
 
 /* ----------------------- Mobile menue -------------- section */
 
-
-
-
 /* -------------------------- MAIN -------------------- section */
 
 .main {
@@ -205,6 +217,7 @@ img {
   padding-top: 112px;
   padding-bottom: 112px;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .main-header {
@@ -294,7 +307,6 @@ img {
   justify-content: center;
   align-items: center;
   transition: background-color var(--transition-func);
- 
 }
 
 .btn-modal-close:hover,
@@ -486,7 +498,6 @@ img {
   max-width: 396px;
   /* margin-right: 24px; */
   /* width: calc(100% / 2); */
-  
 }
 
 .attitudes-caption {
@@ -566,9 +577,12 @@ img {
   padding-bottom: 128px;
 }
 
-.team-caption {
-  /* max-width: 264px; */
-  margin-bottom: 72px;
+.team-container {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .team-header {
@@ -583,7 +597,7 @@ img {
 }
 
 .team-list {
-  /* display: flex; */
+  max-width: 264px;
 }
 
 .team-item {
@@ -592,11 +606,12 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 72px;
 }
 
-/* .team-item:last-child {
-  margin-right: 0;
-} */
+.team-item:last-child {
+  margin-bottom: 0;
+}
 
 .team-item-header {
   font-weight: 500;
@@ -661,6 +676,14 @@ img {
   padding: 96px 0;
 }
 
+.customers-container {
+  /* box-sizing: border-box;
+  align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap; */
+}
+
 .customers-header {
   text-align: center;
   margin-bottom: 72px;
@@ -668,7 +691,7 @@ img {
 
 .customers-icon-list {
   /* display: flex; */
-  /* justify-content: center; */
+  justify-content: center;
 
   /*  */
 
@@ -682,8 +705,8 @@ img {
 .customers-icon-item {
   /* box-sizing: border-box; */
   /* margin-right: 24px; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  /* justify-content: center;
+  align-items: center; */
 
   /*  */
   width: 190px;
@@ -698,8 +721,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 168px;
-  height: 88px;
+  /* width: 190px;
+  height: 88px; */
   padding: 16px 32px;
   fill: #8e8f99;
   border: 1px solid #8e8f99;
@@ -726,6 +749,23 @@ img {
 .footer {
   background-color: var(--main-dark-color);
   padding: 96px 0;
+  /* justify-content: center; */
+}
+
+/* .footer-container {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.footer-block-one {
+  /* box-sizing: border-box; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -736,6 +776,7 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--light-color);
+  justify-content: center;
 }
 
 .footer-logo-web-text {
@@ -772,6 +813,10 @@ img {
 .social-media {
   /* margin-left: 120px; */
   /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .social-media-header {
@@ -819,6 +864,11 @@ img {
 
 .subscribe {
   /* margin-left: 80px; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .subscribe-title {
@@ -831,7 +881,11 @@ img {
 }
 
 .subscribe-form {
-  /* display: flex; */
+  display: flex;
+
+  /* align-items: center; */
+  position: relative;
+  display: block;
 }
 
 .subscribe-item {
@@ -844,6 +898,8 @@ img {
   width: 264px;
   color: #ffffff;
   margin-right: 24px;
+  position: relative;
+    display: block;
 }
 
 .subscribe-item::placeholder {
