@@ -48,6 +48,11 @@
     font-weight: 400;
   }
 
+  .team-container {
+    width: 100%;
+  }
+
+
   .team {
     padding: 120px 0;
   }
