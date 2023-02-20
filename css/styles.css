@@ -757,6 +757,7 @@ button {
 
 .footer-block-one {
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -790,7 +791,7 @@ button {
   left: 156px;
   top: 2418px;
   margin-top: 16px;
-  margin-bottom: 72px;
+  
 }
 
 .footer-container {

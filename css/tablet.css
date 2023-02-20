@@ -120,10 +120,12 @@
 
 
   .footer-container {
-    
+    max-width: 584px;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: start;
+    align-items: start;
+    /* justify-content: start; */
+    justify-content: center;
     /* width: 100%; */
     /* align-items: center; */
     
@@ -138,6 +140,7 @@
 
   .social-media {
     /* display: flex; */
+    text-align: start;
     align-items: start;
     justify-content: start;
   }
@@ -146,7 +149,17 @@
     margin-bottom: 0;
   }
 
- 
+.subscribe {
+  align-items: start;
+  justify-content: start;
+}
+
+
+.subscribe-caption {
+align-items: start;
+justify-content: start;
+}
+
 
   .subscribe-title {
     text-align: start;
@@ -166,6 +179,10 @@
     margin-top: 0;
     margin-left: 24px;
   }
+
+
+
+  
  
 }
 
