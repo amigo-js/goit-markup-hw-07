@@ -212,7 +212,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/mobile/mobile-people-office.jpg);
+    url(../images/tablet/tablet-people-office.jpg);
   background-repeat: no-repeat;
   background-position: center center;
 
@@ -277,6 +277,7 @@ button {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity var(--transition-func), visibility var(--transition-func);
+  overflow: scroll;
 }
 
 .backdrop.is-hidden {
@@ -294,11 +295,25 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, 0) scale(1);
   transition: transform var(--transition-func), opacity var(--transition-func);
   padding: 72px 24px 24px 24px;
+}
+
+.modal {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 408px;
+  padding: 72px 24px 24px 24px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--transition-func), opacity var(--transition-func);
 }
 
 .btn-modal-close {
@@ -343,7 +358,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
+  
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 16px;
@@ -357,9 +372,11 @@ button {
   color: #8e8f99;
   position: relative;
   margin-bottom: 8px;
+  text-align: start;
 }
 
 .label-name {
+  
 }
 
 .modal-input-wrapper {
@@ -579,6 +596,7 @@ button {
 }
 
 .team-container {
+  width: 584px;
 }
 
 .team-header {

@@ -37,16 +37,17 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet/tablet-people-office.jpg);
+      url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-
+    /* background-size: 1440px, 1440px, cover; */
+    
     display: block;
     background-size: cover;
     align-items: center;
     text-align: center;
     padding-top: 112px;
-    padding-bottom: 112px;
+    padding-bottom: 108px;
   }
 
   .main-header {
@@ -115,6 +116,56 @@
     max-width: 356px;
   }
 
+
+
+
+  .footer-container {
+    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    /* width: 100%; */
+    /* align-items: center; */
+    
+    /* width: 100%; */
+  }
+
+  .footer-block-one {
+    text-align: start;
+    margin-right: 24px;
+  }
+  
+
+  .social-media {
+    /* display: flex; */
+    align-items: start;
+    justify-content: start;
+  }
+
+  .social-media-item {
+    margin-bottom: 0;
+  }
+
+ 
+
+  .subscribe-title {
+    text-align: start;
+    /* margin-bottom: 0; */
+  }
+
+  .subscribe-form {
+    display: flex;
+    /* align-items: center; */
+  }
+
+  .subscribe-item {
+    width: 264px;
+  }
+  
+  .subscribe-btn {
+    margin-top: 0;
+    margin-left: 24px;
+  }
  
 }
 
@@ -126,4 +177,13 @@
   .products {
     display: none;
   }
+}
+
+@media screen and (min-width: 768px) {
+
+
+  .attitudes-item-title {
+    text-align: start;
+  }
+
 }
