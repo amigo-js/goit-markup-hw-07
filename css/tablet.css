@@ -125,7 +125,7 @@
     flex-direction: row;
     align-items: start;
     /* justify-content: start; */
-    justify-content: center;
+    /* justify-content: center; */
     /* width: 100%; */
     /* align-items: center; */
     
@@ -172,6 +172,7 @@ justify-content: start;
   }
 
   .subscribe-item {
+    
     width: 264px;
   }
   
